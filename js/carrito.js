@@ -58,3 +58,5 @@ const contadorCarro = () =>{
     cantidadCarro.style.display = "block";
     cantidadCarro.innerText = carrito.length;
 }
+
+

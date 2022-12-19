@@ -51,12 +51,16 @@ const eliminarProducto = () => {
         return carritoId !== buscarId;
     });
     contadorCarro();
+    guardarCarro();
     pintarCarro();
 };
 
 const contadorCarro = () =>{
     cantidadCarro.style.display = "block";
-    cantidadCarro.innerText = carrito.length;
-}
+    const carritoLength = carrito.length;
+    localStorage.setItem("carritoLength", JSON.stringify(carritoLength));
+    cantidadCarro.innerText = JSON.parse(localStorage.getItem("carritoLength"));
+};
+contadorCarro();
 
 

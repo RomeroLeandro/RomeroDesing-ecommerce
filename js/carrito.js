@@ -49,7 +49,10 @@ const pintarCarro = () => {
     eliminar.className = "eliminarProducto";
     carritoContenido.append(eliminar);
 
-    eliminar.addEventListener("click", eliminarProducto);
+    eliminar.addEventListener("click", ()=>{
+        eliminarProducto();
+        alertify.error("Has eliminado un producto")
+    });
     });
 
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/alertify.css">
+    <link rel="stylesheet" href="./css/themes/bootstrap.css">
     <title>Romero Desings</title>
 </head>
 <body>
@@ -15,7 +17,6 @@
             </a>
         </div>
         <nav>
-            <button class="inicioSesion" id="inicioSesion">INICIAR SESION</button>
             <h3 id="verCarrito">🛒<span id="cantidadCarro" class="cantidadCarro"></span></h3>
         </nav>
     </header>
@@ -33,44 +34,12 @@
             <div id="contenidoTienda" class="contenidoTienda"></div>
         </div>
         <div class="carrito" id="carritoCompra"></div>
-        <div class="contenedor">
-            <div class="cajaTrasera">
-                <div class="cajaTraseraLogin">
-                    <h3>¿Ya tienes una cuenta?</h3>
-                    <p>Inicia sesión para entrar en la página</p>
-                    <button id="btnIniciarSesion">Iniciar Sesión</button>
-                </div>
-                <div class="cajaTraseraRegistro">
-                    <h3>¿Aún no tienes una cuenta?</h3>
-                    <p>Regístrate para que puedas iniciar sesión</p>
-                    <button id="btnRegistrarse">Regístrarse</button>
-                </div>
-            </div>
-            <!--Formulario de Login y registro-->
-            <div class="contenedorLoginRegistro">
-                <!--Login-->
-                <form action="" class="formularioLogin">
-                    <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Entrar</button>
-                </form>
-                <!--Register-->
-                <form action="" class="formularioRegistro">
-                    <h2>Regístrarse</h2>
-                    <input type="text" placeholder="Nombre completo">
-                    <input type="text" placeholder="Correo Electronico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
-                    <button>Regístrarse</button>
-                </form>
-            </div>
-        </div>
     </main>
     <footer></footer>
     <script src="./productos.json"></script>
     <script src="./js/app.js"></script>
     <script src="./js/carrito.js"></script>
-    <script src="./js/login.js"></script>
+    <!-- alertify -->
+    <script src="./js/alertify.js"></script>
 </body>
 </html>

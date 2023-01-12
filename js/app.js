@@ -55,6 +55,8 @@ const tarjetas = data => {
                 contadorCarro();
                 guardarCarro();
             }
+            alertify.success("Tu producto se ha agregado al carrito")
+            
         });
     });
 }

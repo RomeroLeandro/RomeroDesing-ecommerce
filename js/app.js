@@ -29,7 +29,7 @@ const tarjetas = data => {
         contenidoTienda.append(contenido);
     
         let comprar = document.createElement("button")
-        comprar.innerText = "comprar";
+        comprar.innerText = "COMPRAR";
         comprar.className = "comprar";
     
         contenido.append(comprar);

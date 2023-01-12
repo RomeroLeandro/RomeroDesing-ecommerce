@@ -3,7 +3,7 @@ const pintarCarro = () => {
     carritoCompra.style.display = "flex";
     const headerCarrito = document.createElement("div");
     headerCarrito.className = "headerCarrito";
-    headerCarrito.innerHTML = `<p class= "carritoPalabra"> carrito. </p>`;
+    headerCarrito.innerHTML = `<p class= "carritoPalabra"> CARRO DE COMPRAS. </p>`;
     carritoCompra.append(headerCarrito);
 
     const headerButton = document.createElement("h3");
@@ -20,7 +20,6 @@ const pintarCarro = () => {
         carritoContenido.className = "carritoContenido"
         carritoContenido.innerHTML = `
         <img src="${product.img}">
-        <h3>${product.nombre}</h3>
         <p class:"precio">$ ${product.precio}</p>
         <span class="restar"> - </span>
         <p>Cantidad: ${product.cantidad}</p>
@@ -59,7 +58,7 @@ const pintarCarro = () => {
 
     const totalCarro = document.createElement("div")
     totalCarro.className = "totalCompra"
-    totalCarro.innerHTML = `total a pagar: $ ${total}`
+    totalCarro.innerHTML = `TOTAL A PAGAR: $ ${total}`
     carritoCompra.append(totalCarro)
 };
 

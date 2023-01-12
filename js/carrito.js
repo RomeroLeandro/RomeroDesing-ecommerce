@@ -22,9 +22,27 @@ const pintarCarro = () => {
         <img src="${product.img}">
         <h3>${product.nombre}</h3>
         <p class:"precio">$ ${product.precio}</p>
+        <span class="restar"> - </span>
         <p>Cantidad: ${product.cantidad}</p>
+        <span class="sumar"> + </span>
         <p>Total: ${product.cantidad * product.precio}</p>`;
-    carritoCompra.append(carritoContenido);
+
+        carritoCompra.append(carritoContenido);
+
+        let restar = carritoContenido.querySelector(".restar")
+        restar.addEventListener("click", ()=>{
+            if(product.cantidad !== 1){
+                product.cantidad--;
+            }
+            guardarCarro();
+            pintarCarro();
+        })
+        let sumar = carritoContenido.querySelector(".sumar")
+        sumar.addEventListener("click", ()=>{
+            product.cantidad++;
+            guardarCarro();
+            pintarCarro();
+        })
 
     let eliminar = document.createElement("span");
     eliminar.innerText = "X";
